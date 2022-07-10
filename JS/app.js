@@ -608,10 +608,10 @@ const renderResults = (list) => {
 
 //   function sendEmail(){
        function sendEmail(){
-          Email.send({
+        Email.send({
         SecureToken: "25569c14-0ac2-4219-8e78-79b9bbda8146",
         To : 'emailfromdepweb@gmail.com',
-        From : document.getElementById("contacts-email").value,
+        From : 'emailfromdepweb@gmail.com',
         Subject : "New message from dep website",
         Body : "Name: " + document.getElementById("contacts-name").value
         +"<br> Email: " + document.getElementById("contacts-email").value
