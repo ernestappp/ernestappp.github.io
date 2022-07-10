@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- PAKEISTI APRAŠYMĄ!!!!!!!!!-->
+    <meta
+      name="description"
+      content="Aprašyti iki 140 simbolių kam www skirtas, kad geriau atrastų paieškos varikliai www"
+    />
+
+    <!-- reikia dėl BOOTSTRAP naudojimo -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- Dėl Bootstrap icon naudojimo-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
+      integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Dėl awsome font icon naudojimo-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!--link'as iki CSS failo - VISADA patikrinti ar teisingas PATH-->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Dėl carousel -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Department of IT Language</title>
+  </head>
+
+  <body>
+    <header>
+    <div class="fixed-top" id="bendrasnavbar">
+      <div class="navbar navbar-expand-md   2k py-1" >
+        <div class="d-flex container justify-content-between">
+          <img
+            class="navbar-brand"
+            src="/Images/VU_logotipas-bendrinis_baltas_EN_ready.png"
+            alt="VU logo"
+          />
+          <div class="logo-tekstas">
+            <h4>Faculty of Philology</h4>
+            <h4>
+              Department of Italian <br />
+              Linguistics and Literature
+            </h4>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navmenu"
+          >
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#aboutus" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#newsandevents" class="nav-link">News and Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#people" class="nav-link">People</a>
+                </li>
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            </ul>
+            <button class="btn modal-btn">
+                Contact Us</br>
+              </button>
+              <div class="modal-overlay">
+                <div class="modal-container container">
+                        <form onsubmit="sendEmail(); reset();return false;"  class="contact-us">
+                          <div class="contact-form-header text-center pt-3">
+                            <h3>Please, get in touch for any collaboration ideas <br> or any questions you may have</h3>
+                          </div>
+                          <div class="contacters-info d-flex justify-content-center align-items-center gap-5 mb-4 mt-4">
+                              <input type="text" id="contacts-name"placeholder="Enter your name" name="name" required/>
+                              <input type="email" id="contacts-email" placeholder="Enter your email" name="email" required />
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center pb-3">
+                              <textarea type="text" id="contacts-message" placeholder="Your message"  name="Send us a message" required rows="15" cols="50" style="max-width:100%;" ></textarea>
+                            </div> 
+                          <div class="d-flex justify-content-center align-items-center">
+                          <button class="contact-us-submit-button" type="Submit">
+                            Send
+                          </button>   
+                          </div>
+                      </form> 
+                  <button class="close-btn"><i class="fas fa-times"></i></button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="language-bar opacity-75">
+        <div class="container d-flex justify-content-between align-items-center pb-0">
+            <button class="searchweb-button"><a href="#searchweb">Search WEB</a></button>
+          <ul class="language-list align-items-center">
+            <li><a href="#">IT</a></li>
+            <li><a href="#">LT</a></li>
+            <li><a href="#">EN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </header>
+
+  <main>
+      <section class="hero hero-carousel container" id="home">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="false"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="Images/Carousel_Hero1.jpg"
+                class="d-block w-100 opacity-50"
+                alt="Coliage"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/Images/Carousel_Hero2.jpg"
+                class="d-block w-100 opacity-50"
+                alt="Handwriting"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/Images/Carousel_Hero3.jpg"
+                class="d-block w-100 opacity-50"
+                alt="Map"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/Images/Carousel_HERO4.jpg"
+                class="d-block w-100 opacity-50"
+                alt="Basel"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fourth slide label</h5>
+                <p>
+                  Some representative placeholder content for the fourth slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/Images/activity_vietoj_calendar.jpg"
+                class="d-block w-100 opacity-50"
+                alt="Yellowwriting"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>fa-chevron-right slide label</h5>
+                <p>
+                  Some representative placeholder content for the fith slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="aboutus container" id="aboutus">
+        <h1 class="text-center">about us</h1>
+        <p class="text-center">
+          Il Dipartimento di Linguistica e Letteratura Italiana è nato nel mese
+          di ottobre del 2018 all'interno dell'Istituto di Anglistica
+          Romanistica e Studi Classici della Facoltà di Filologia
+          dell’Università di Vilnius. Le principali linee di ricerca degli
+          studiosi che afferiscono al Dipartimento riguardano la linguistica
+          (storica, generale, contrastiva e italiana) la letteratura italiana
+          (antica, moderna e contemporanea) e gli studi traduttologici.
+          L'offerta formativa prevede un corso di laurea di primo livello
+          (quadriennale) in filologia italiana e un corso di laurea di secondo
+          livello (biennale) in linguistica generale e italiana. Il Dipartimento
+          di Linguistica e Letteratura Italiana costituisce il maggior centro di
+          italianistica della Lituania e dei Paesi baltici.
+        </p>
+       
+      </section>
+
+      <section class="statistics container">
+        <!-- single number -->
+        <article class="statistics d-block">
+          <span class="number" data-value="137">0</span>
+          <p>International projects</p>
+        </article>
+        <!-- end of single number -->
+        <!-- single number -->
+        <article class="statistics d-block">
+          <span class="number" data-value="578">0</span>
+          <p>Lectures hours</p>
+        </article>
+        <!-- end of single number -->
+        <!-- single number -->
+        <article class="statistics d-block">
+          <span class="number" data-value="126">0</span>
+          <p>Thesis</p>
+        </article>
+        <!-- end of single number -->
+      </section>
+
+      <section class="container activity-events-container" id="newsandevents">
+        <div class="activity-title text-center mt-5">
+          <h1>News and Events </h1>
+        </div>
+        <article class="activity">
+          <!-- btn container -->
+          <div class="btn-container-activity">
+            <button class="tab-btn active" data-id="news">News</button>
+            <button class="tab-btn" data-id="events">Events</button>
+            <button class="tab-btn " data-id="conference">Conference</button>
+            <button class="tab-btn" data-id="seminars">Seminars</button>
+            <button class="tab-btn" data-id="projects">Projects</button>
+            <button class="tab-btn" data-id="lectures">Lectures</button>
+          </div>
+          <div class="activity-content h-100">
+            <!-- single item -->
+            <div class="content active" id="news">
+              <h2 class="text-center">news</h2>
+              <p class="p-activity">
+                Chambray authentic truffaut, kickstarter brunch taxidermy vape
+                heirloom four dollar toast raclette shoreditch church-key.
+                Poutine etsy tote bag, cred fingerstache leggings cornhole
+                everyday carry blog gastropub. Brunch biodiesel sartorial mlkshk
+                swag, mixtape hashtag marfa readymade direct trade man braid
+                cold-pressed roof party. Small batch adaptogen coloring book
+                heirloom. Letterpress food truck hammock literally hell of wolf
+                beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie,
+                banh mi salvia venmo photo booth quinoa chicharrones.<a href="allnews.html" target="_blank"><h4>see all news</h4></a>
+                <div>
+                <input type="email" id="newsletter-subscription" placeholder="Enter Your Email" name="email" required />
+                <a href="mailto:ernesta.pesliakaite@gmail.com?subject=Mail from Our Site"><input class="contact-us-submit-button" type="Submit" value="Subscribe NewsLetter" /></a>
+                </div>
+                
+              </p>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content " id="events">
+              <h2 class="text-center">Events calendar</h2>
+              <p class="p-activity">
+                Chambray authentic truffaut, kickstarter brunch taxidermy vape
+                heirloom four dollar toast raclette shoreditch church-key.
+                Poutine etsy tote bag, cred fingerstache leggings cornhole
+                everyday carry blog gastropub. Brunch biodiesel sartorial mlkshk
+                swag, mixtape hashtag marfa readymade direct trade man braid
+                cold-pressed roof party. Small batch adaptogen coloring book
+                heirloom. Letterpress food truck hammock literally hell of wolf
+                beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie,
+                banh mi salvia venmo photo booth quinoa chicharrones.
+              <a href="allevents.html" target="_blank"><h4>see all events</h4></a>
+              </p>
+              
+              <!-- Events calendar -->
+            <div class=" container container-calendar">
+              <div id="calendar"></div>
+            </div>
+              <!-- END Events calendar -->
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="conference">
+              <h2 class="text-center">Conference</h2>
+              <p class="p-activity">
+                I'm baby wolf pickled schlitz try-hard normcore marfa man bun
+                mumblecore vice pop-up XOXO lomo kombucha glossier bicycle
+                rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard
+                tilde try-hard, woke fixie banjo man bun. Small batch tumeric
+                mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral
+                direct trade hoodie ugh chambray, craft beer pork belly flannel
+                tacos single-origin coffee art party migas plaid pop-up.
+                <a href="allconference.html" target="_blank"><h4>see all conference</h4></a>
+              </p>
+              <ul>
+                <li><a href="http://www.filologiaitaliana.flf.vu.lt/wp-content/uploads/2021/10/XXI-edizione-SLIM-2021.10.18-22.pdf">Setimana Italiana</a></li>
+                <li><a href="http://www.filologiaitaliana.flf.vu.lt/seminari/">Conference</a></li>
+                <li><a href="http://www.filologiaitaliana.flf.vu.lt/wp-content/uploads/2019/04/PROGRAMMA.pdf">Conference Vilnius</a></li>
+              </ul>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="seminars">
+              <h2 class="text-center">Seminars</h2>
+              <p class="p-activity">
+                Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth
+                crucifix offal deep v hella biodiesel. Church-key listicle
+                polaroid put a bird on it chillwave palo santo enamel pin,
+                tattooed meggings franzen la croix cray. Retro yr aesthetic four
+                loko tbh helvetica air plant, neutra palo santo tofu mumblecore.
+                Hoodie bushwick pour-over jean shorts chartreuse shabby chic.
+                Roof party hammock master cleanse pop-up truffaut, bicycle
+                rights skateboard affogato readymade sustainable deep v
+                live-edge schlitz narwhal.
+                <a href="allseminars.html" target="_blank"><h4>see all seminars</h4></a>
+              </p>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="projects">
+              <h2 class="text-center">Projects</h2>
+              <p class="p-activity">
+                Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth
+                crucifix offal deep v hella biodiesel. Church-key listicle
+                polaroid put a bird on it chillwave palo santo enamel pin,
+                tattooed meggings franzen la croix cray. Retro yr aesthetic four
+                loko tbh helvetica air plant, neutra palo santo tofu mumblecore.
+                Hoodie bushwick pour-over jean shorts chartreuse shabby chic.
+                Roof party hammock master cleanse pop-up truffaut, bicycle
+                rights skateboard affogato readymade sustainable deep v
+                live-edge schlitz narwhal.
+                <a href="allprojects.html" target="_blank"><h4>see all projects</h4></a>
+              </p>
+              <ul>
+                <li>list item</li>
+                <li>list item</li>
+                <li>list item</li>
+              </ul>
+            </div>
+            <!-- end of single item -->
+            
+            <!-- single item -->
+            <div class="content" id="lectures">
+              <h2 class="text-center">Lectures</h2>
+              <p class="p-activity">
+                Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth
+                crucifix offal deep v hella biodiesel. Church-key listicle
+                polaroid put a bird on it chillwave palo santo enamel pin,
+                tattooed meggings franzen la croix cray. Retro yr aesthetic four
+                loko tbh helvetica air plant, neutra palo santo tofu mumblecore.
+                Hoodie bushwick pour-over jean shorts chartreuse shabby chic.
+                Roof party hammock master cleanse pop-up truffaut, bicycle
+                rights skateboard affogato readymade sustainable deep v
+                live-edge schlitz narwhal.
+                <a href="alllectures.html" target="_blank"><h4>see all lectures</h4></a>
+              </p>
+              <ul>
+                <li>list item</li>
+                <li>list item</li>
+                <li>list item</li>
+              </ul>
+            </div>
+            <!-- end of single item -->
+          </div>
+        </article>
+      </section>
+
+      <section class="container container-people pt-2" id="people">
+        <div class="columns-people">
+          <h1 class="text-center"> People </h1>
+          <div class="row d-flex">
+            <h3 class="column-professors-head text-center"><b>
+              Associated professors
+            </b></h3>
+            <div
+              class="person-card-body text-center justify-content-center col-sm-4"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/men/11.jpg"
+                class="rounded-circle mb-3"
+                alt="Oops"
+              />
+              <h4 class="card-title mb-3"><b>
+                Prof. Assoc. dr. Doe Art <br />
+                (direttore del Dipartimento)
+              </b></h4>
+              <p class="card-text">
+                Sociolinguistica (storica), filologia baltica, lingua prussiana,
+                linguistica storica, generale e italiana, dialettologia
+                italiana, grammatica storica e storia della lingua italiana.
+              </p>
+              <a href="#"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+            <div
+              class="person-card-body text-center justify-content-center col-sm-4"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/men/12.jpg"
+                class="rounded-circle mb-3"
+                alt="Oops"
+              />
+              <h4 class="card-title mb-3">
+                <b>Prof. Assoc. dr. Dan Boe <br />
+                (presidente del CdS in Filologia Italiana)
+              </b></h4>
+              <p class="card-text">
+                Storia della letteratura italiana, letteratura italiana del
+                Cinquecento, letterature comparate, storia delle idee.
+              </p>
+              <a href="#"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+            <div
+              class="person-card-body text-center justify-content-center col-sm-4"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/women/13.jpg"
+                class="rounded-circle mb-3"
+                alt="Oops"
+              />
+              <h4 class="card-title mb-3"><b>Prof. Assoc. dr. Nika North</b></h4>
+              <p class="card-text">
+                Letteratura italiana contemporanea, teoria della letteratura,
+                critica letteraria, letterature comparate
+              </p>
+              <a href="#"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+          </div>
+          <div class="row d-flex">
+            <h3 class="columns-researchers-head text-center"><b>Researchers</b></h3>
+            <div
+              class="person-card-body text-center justify-content-center col-sm-4"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/men/13.jpg"
+                class="rounded-circle mb-3"
+                alt="Oops"
+              />
+              <h4 class="card-title mb-3"><b>Dr. David Cold</b></h4>
+              <p class="card-text">
+                Critica del testo poetico, stilistica, poesia italiana
+                contemporanea
+              </p>
+              <a href="#"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+            <div
+              class="person-card-body text-center justify-content-center col-sm-4"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/men/14.jpg"
+                class="rounded-circle mb-3"
+                alt="Oops"
+              />
+              <h4 class="card-title mb-3"><b>Dr. Chris Adams</b></h4>
+              <p class="card-text">
+                Filologia baltica, teoria e tecnica della traduzione, lingua
+                lituana.
+              </p>
+              <a href="#"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+            <div
+              class="person-card-body text-center justify-content-center col-sm-4"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/women/14.jpg"
+                class="rounded-circle mb-3"
+                alt="Oops"
+              />
+              <h4 class="card-title mb-3"><b>Dr. Joan Taira Rasmus</b></h4>
+              <p class="card-text">
+                Acquisizione linguistica, acquisizione della L2,
+                sociolinguistica, psicolinguistica.
+              </p>
+              <a href="#"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+          </div>
+          <div class="row d-flex">
+            <h3 class="columns-lecturers-head text-center"><b>Lecturers</b></h3>
+            <div
+              class="person-card-body text-center justify-content-center col-sm-3"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/women/15.jpg"
+                class="rounded-circle mb-3"
+                alt="Oops"
+              />
+              <h4 class="card-title mb-3"><b>Alisa Cherry</b></h4>
+              <p class="card-text">
+                Teatro, teoria e pratica della traduzione, didattica
+                dell’italiano.
+              </p>
+              <a href="#"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+            <div
+              class="person-card-body text-center justify-content-center col-sm-3"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/women/16.jpg"
+                class="rounded-circle mb-3"
+                alt="Oops"
+              />
+              <h4 class="card-title mb-3"><b>Pam Falck</b></h4>
+              <p class="card-text">
+                Cultura, arte e cinema italiano, didattica dell'italiano.
+              </p>
+              <a href="#"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+            <div
+              class="person-card-body text-center justify-content-center col-sm-3"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/men/15.jpg"
+                class="rounded-circle mb-3"
+                alt="Oops"
+              />
+              <h4 class="card-title mb-3"><b>Math Noah</b></h4>
+              <p class="card-text">Didattica dell'italiano.</p>
+              <a href="#"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+            <div
+              class="person-card-body text-center justify-content-center col-sm-3"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/men/18.jpg"
+                class="rounded-circle mb-3"
+                alt="Oops"
+              />
+              <h4 class="card-title mb-3"><b>Dan Trump</b></h4>
+              <p class="card-text">Didattica dell'italiano.</p>
+              <a href="#"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+          </div>
+          <div class="row d-flex">
+            <h3 class="columns-doctoral-head text-center"><b>Doctoral students</b></h3>
+            <div
+              class="person-card-body text-center justify-content-center col-sm-4"
+            ></div>
+            <div
+              class="person-card-body text-center justify-content-center col-sm-4"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/women/22.jpg"
+                class="rounded-circle mb-3"
+                alt="Oops"
+              />
+              <h4 class="card-title mb-3">
+                <b>Jane Smith  </b><br />
+                in cotutela con l’Università di Pisa
+             </h4>
+              <p class="card-text">
+                Linguistica contrastiva (lituano-italiano), cromonimia.
+              </p>
+              <a href="#"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+            <div
+              class="person-card-body text-center justify-content-center col-sm-4"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="head-partners justify-content-center text-center">
+            <h2 class="text-heading-partners pt-4">
+              Our <span><b>Partners</b></span>
+            </h2>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <a
+              href="https://ambvilnius.esteri.it/ambasciata_vilnius/lt/"
+              target="”_blank”">
+              <img src="/Images/partners/1.png" " alt="Oops"/></a>
+            <a href="https://www.flf.vu.lt/en/" target="”_blank”">
+              <img src="/Images/partners/3.png" alt="Oops"
+            /></a>
+            <a href="https://iicvilnius.esteri.it/iic_vilnius/it/"
+              target="”_blank”" >
+              <img src="/Images/partners/4.png" alt="Oops"
+            /></a>
+            <a href="http://www.centrostudiponentini.it/home.html" target="”_blank”"
+              ><img src="/Images/partners/9.png" alt="Oops"
+            /></a>
+            <a href="https://www.fileli.unipi.it/" target="”_blank”"
+              ><img src="/Images/partners/5.png" alt="Oops"
+            /></a>
+            <a href="https://www.vu.lt/en/" target="”_blank”"
+              ><img src="/Images/partners/6.png" alt="Oops"
+            /></a>
+            <a href="http://www.iisl.it/" target="”_blank”"
+              ><img src="/Images/partners/7.jpg" alt="Oops"
+            /></a>
+            <a href="http://www.cadepuio.it/home.html" target="”_blank”"
+              ><img src="/Images/partners/10.png" alt="Oops"
+            /></a>
+            <!-- <a href="https://www.consultaligure.org/" target="”_blank”"
+              ><img src="/assets/Images/partners/11.png" alt="Oops"
+            /></a> -->
+            <!-- <a href="http://lki.lt/?lang=en" target="”_blank”"
+            ><img src="/assets/Images/partners/2.png" alt="Oops"
+          /></a> -->
+          <!-- <a href="https://www.issl.unibe.ch/index_eng.html" target="”_blank”"
+              ><img src="/assets/Images/partners/8.png" alt="Oops"
+            /></a> -->
+          <a href="https://ltec.lrv.lt/lt/" target="”_blank”"
+              ><img src="/Images/partners/12.jpg" alt="Oops"
+            /></a>
+          <!-- <a href="https://www.comune.sanbartolomeoalmare.im.it/" target="”_blank”"
+              ><img src="/assets/Images/partners/13.jpg" alt="Oops"
+            /></a> -->
+        </div>
+        <div class="container review text-center">
+                  <!-- review -->
+                    <div class="img-container">
+                      <img src="./person-1.jpeg" id="person-img" alt="" />
+                    </div>
+                    <h4 id="author">Sara Jongs</h4>
+                    <p id="job">ux designer</p>
+                    <p class="info">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                      sed amet, enim consequuntur provident perferendis maiores! Velit
+                      officia eveniet ad.
+                    </p>
+                    <!-- prev next buttons -->
+                    <div class="button-container">
+                      <button class="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                      </button>
+                      <button class="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                    </div>
+                    <!-- random button -->
+                    <button class="random-btn">
+                      random review <meta http-equiv="X-UA-Compatible" content="IE=7" />
+                    </button>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+      <section class="footer-map-1" id="contacts">
+        <div class="container footer-container">
+          <!-- <div class="row g-4"> -->
+          <div class="contact-info-header mt-4">
+            <h1 class="text-center mb-4">Contacts</h1>
+            <ul>
+              <li class="contact-info-item bi bi-pin text-dark">
+                <span>Universiteto str. 5, LT-01513 Vilnius</span>
+              </li>
+              <li class="contact-info-item bi bi-phone text-dark">
+                <span>+370 (5) 123 45</span>
+              </li>
+              <li class="contact-info-item bi bi-linkedin text-dark">
+                <span>www.linkedin.com/lingua</span>
+              </li>
+              <li class="contact-info-item bi bi-envelope text-dark">
+                <span>linguaitaliana@flf.vu.lt</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm map h-100 container-fluid p-0 m-0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d544.2618051834718!2d25.288045818720292!3d54.68320648115283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76b37f8abeade068!2zNTTCsDQwJzU5LjYiTiAyNcKwMTcnMTguNiJF!5e0!3m2!1slt!2slt!4v1656884240385!5m2!1slt!2slt" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <form class="search-form" id="searchweb">
+            <input type="text" class="search-form-input" placeholder="Search departments web"/>
+            <button type="submit" class="submit-btn search-web-btn">search</button>
+          </form>
+          <div class="search-results"></div>
+        </div>
+      </section>
+
+      <section class="copyright ">
+        <div class="container d-flex justify-content-between align-items-center">
+          <p>Copyright&copy <span id="date"></span> all rights reserved</p>
+          <div><img src="/Images/DPT LOGO.PNG" class="p-2" alt="Dpt logo"></div>
+          </div>
+      
+      </section>
+  </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="text/javascript">
+      $(".owl-carousel").owlCarousel({
+        loop: true, //pakeitus i false nesuks foto ratu is naujo
+        margin: 10,
+        nav: false, //galima bandyti su true atsiranda rodykles
+        autoplay: true,
+        autoplayTimeout: 2000, //keisti galima uzlaikymo laika
+        stagePadding: 200, // tarpai tarp foto
+        dots: false, //nuima burbuliukus navigacijoje, galima palikti
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 5,
+          },
+          1000: {
+            items: 5, // galima valdyti ir nurodyti kiek nuotrauku ar objektu rodo prie tam tikro ekrano. Uzdejus 1 rodys per visa ekrana, bet galima imesti i containeri tam tikroje www vietoje
+          },
+        },
+      });
+    </script>
+
+    <!-- visada  body gale dėti dėl bootstrap naudojimo - JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+  <!-- CALENDAR cript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+  <!-- javascript -->
+    <script src="/JS/app.js"></script>
+    <!-- CONTACT US FORMOS EMAIL SIUNTIMAS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <!-- <script>
+       function sendEmail(){
+        Email.send({
+          Host : 'smtp.elasticemail.com', //1
+          Username :'emailfromdepweb@gmail.com',//2
+          Password :'**********35BEB',//3 vietoj šių trijų 1 2 3 eilučių įtarpti šį "/SecureToken:"bd0ecc52-908d-4706-a5f7-aeaef6b91a11",/" (iš smtpjs)
+          To : 'emailfromdepweb@gmail.com',
+          From : document.getElementById("contacts-email").value,
+          Subject : "New message from dep website",
+          Body : "Name: " + document.getElementById("contacts-name").value
+          +"<br> Email: " + document.getElementById("contacts-email").value
+          +"<br> Message: " + document.getElementById("contacts-message").value
+          }).then(
+            message => alert("Message Send Succesfully")
+          );
+  }
+    </script> -->
+  </body>
+</html>
