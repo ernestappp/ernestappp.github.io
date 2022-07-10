@@ -617,7 +617,7 @@ const renderResults = (list) => {
         +"<br> Email: " + document.getElementById("contacts-email").value
         +"<br> Message: " + document.getElementById("contacts-message").value
         }).then(
-          message => alert(message)
+          message => alert("Message Sent Succesfully")
         );
     };
   // END FORM CONTACT US MESSAGE RECEIVE
