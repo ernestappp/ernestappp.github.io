@@ -107,24 +107,33 @@
                 Contact Us</br>
               </button>
               <div class="modal-overlay">
-                <div class="modal-container container">
-                        <form onsubmit="sendEmail(); reset();return false;"  class="contact-us">
-                          <div class="contact-form-header text-center pt-3">
-                            <h3>Please, get in touch for any collaboration ideas <br> or any questions you may have</h3>
-                          </div>
-                          <div class="contacters-info d-flex justify-content-center align-items-center gap-5 mb-4 mt-4">
-                              <input type="text" id="contacts-name"placeholder="Enter your name" name="name" required/>
-                              <input type="email" id="contacts-email" placeholder="Enter your email" name="email" required />
-                          </div>
-                          <div class="d-flex justify-content-center align-items-center pb-3">
-                              <textarea type="text" id="contacts-message" placeholder="Your message"  name="Send us a message" required rows="15" cols="50" style="max-width:100%;" ></textarea>
-                            </div> 
-                          <div class="d-flex justify-content-center align-items-center">
-                          <button class="contact-us-submit-button" type="Submit">
-                            Send
-                          </button>   
-                          </div>
-                      </form> 
+                <div class="modal-container container justify-content-center align-items-center pb-3">
+                  <!-- <form onsubmit="sendEmail(); reset();return false;">
+                    <input type="text" id="contacts-name" placeholder="Enter your name"  required/>
+                    <input type="email" id="contacts-email" placeholder="Enter your email" required />
+                    <textarea type="text" id="contacts-message" placeholder="Your message" required rows="10" cols="50" style="max-width:100%;" ></textarea>
+                    <button type="submit" class="contact-us-submit-button" > Send </button>
+                  </form>
+ -->
+
+                  <form   class="contact-us" onsubmit="sendEmail(); reset();return false;">
+                    <div class="contact-form-header text-center pt-3">
+                      <h3>Please, get in touch for any collaboration ideas <br> or any questions you may have</h3>
+                    </div>
+                    <div class="contacters-info d-flex justify-content-center align-items-center gap-5 mb-4 mt-4">
+                        <input type="text" id="contacts-name" placeholder="Enter your name" name="name" required/>
+                        <input type="email" id="contacts-email" placeholder="Enter your email" name="email" required />
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center pb-3">
+                        <textarea type="text" id="contacts-message" placeholder="Your message"  name="Send us a message" required rows="15" cols="50" style="max-width:100%;" ></textarea>
+                      </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                    <button class="contact-us-submit-button" type="submit" >
+                      Send
+                    </button>   
+                    </div>
+                </form> 
+
                   <button class="close-btn"><i class="fas fa-times"></i></button>
                 </div>
               </div>
@@ -847,21 +856,19 @@
     <!-- CONTACT US FORMOS EMAIL SIUNTIMAS -->
     <script src="https://smtpjs.com/v3/smtp.js"></script> 
     <!-- <script>
-       function sendEmail(){
-        Email.send({
-          Host : 'smtp.elasticemail.com', //1
-          Username :'emailfromdepweb@gmail.com',//2
-          Password :'**********35BEB',//3 vietoj šių trijų 1 2 3 eilučių įtarpti šį "/SecureToken:"bd0ecc52-908d-4706-a5f7-aeaef6b91a11",/" (iš smtpjs)
-          To : 'emailfromdepweb@gmail.com',
-          From : document.getElementById("contacts-email").value,
-          Subject : "New message from dep website",
-          Body : "Name: " + document.getElementById("contacts-name").value
-          +"<br> Email: " + document.getElementById("contacts-email").value
-          +"<br> Message: " + document.getElementById("contacts-message").value
-          }).then(
-            message => alert("Message Send Succesfully")
-          );
-  }
+  //      function sendEmail(){
+  //       Email.send({
+  //         SecureToken: "25569c14-0ac2-4219-8e78-79b9bbda8146",
+  //         To : 'emailfromdepweb@gmail.com',
+  //         From : document.getElementById("contacts-email").value,
+  //         Subject : "New message from dep website",
+  //         Body : "Name: " + document.getElementById("contacts-name").value
+  //         +"<br> Email: " + document.getElementById("contacts-email").value
+  //         +"<br> Message: " + document.getElementById("contacts-message").value
+  //         }).then(
+  //           message => alert("Message Send Succesfully")
+  //         );
+  // };
     </script> -->
   </body>
 </html>
