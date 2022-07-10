@@ -348,10 +348,10 @@
                 heirloom. Letterpress food truck hammock literally hell of wolf
                 beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie,
                 banh mi salvia venmo photo booth quinoa chicharrones.<a href="allnews.html" target="_blank"><h4>see all news</h4></a>
-                <div>
-                <input type="email" id="newsletter-subscription" placeholder="Enter Your Email" name="email" required />
-                <a href="mailto:ernesta.pesliakaite@gmail.com?subject=Mail from Our Site"><input class="contact-us-submit-button" type="Submit" value="Subscribe NewsLetter" /></a>
-                </div>
+                <form class="newsletter" onsubmit="sendEmail(); reset();return false;">
+                <input type="email" id="newsletter-subscription" placeholder="Enter your email" class="pb-1 pt-1" required />
+                <button class="contact-us-submit-button" type="submit" >Subscribe NewsLetter</button>
+                </form>
                 
               </p>
             </div>
@@ -699,7 +699,7 @@
               <img src="/Images/partners/4.png" alt="Oops"
             /></a>
             <a href="http://www.centrostudiponentini.it/home.html" target="”_blank”"
-              ><img src="/Images/partners/9.png" alt="Oops"
+              ><img src="/Images/partners/9.png" alt="Oops" class="align-items-center"
             /></a>
             <a href="https://www.fileli.unipi.it/" target="”_blank”"
               ><img src="/Images/partners/5.png" alt="Oops"
@@ -854,7 +854,7 @@
     <script src="/JS/app.js"></script>
     <!-- CONTACT US FORMOS EMAIL SIUNTIMAS -->
     <script src="https://smtpjs.com/v3/smtp.js"></script> 
-    <script>
+    <!-- <script>
        function sendEmail(){
         Email.send({
           SecureToken: "25569c14-0ac2-4219-8e78-79b9bbda8146",
@@ -868,6 +868,6 @@
             message => alert("Message Send Succesfully")
           );
   };
-    </script>
+    </script> -->
   </body>
 </html>

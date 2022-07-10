@@ -606,18 +606,19 @@ const renderResults = (list) => {
 
   // FORM CONTACT US MESSAGE RECEIVE
 
-//   function sendEmail(){
-    //    function sendEmail(){
-    //     Email.send({
-    //     SecureToken: "25569c14-0ac2-4219-8e78-79b9bbda8146",
-    //     To : 'emailfromdepweb@gmail.com',
-    //     From : 'emailfromdepweb@gmail.com',
-    //     Subject : "New message from dep website",
-    //     Body : "Name: " + document.getElementById("contacts-name").value
-    //     +"<br> Email: " + document.getElementById("contacts-email").value
-    //     +"<br> Message: " + document.getElementById("contacts-message").value
-    //     }).then(
-    //       message => alert(message)
-    //     );
-    // };
+ 
+  function sendEmail(){
+  
+    Email.send({
+      SecureToken: "25569c14-0ac2-4219-8e78-79b9bbda8146",
+      To : 'emailfromdepweb@gmail.com',
+      From : document.getElementById("contacts-email").value,
+      Subject : "New message from dep website",
+      Body : "Name: " + document.getElementById("contacts-name").value
+      +"<br> Email: " + document.getElementById("contacts-email").value
+      +"<br> Message: " + document.getElementById("contacts-message").value
+      }).then(
+        message => alert("Message Send Succesfully")
+      )
+};
   // END FORM CONTACT US MESSAGE RECEIVE
