@@ -396,11 +396,11 @@ activity.addEventListener("click", function (e) {
 
 //END CALENDAR
 
-//END NEWS AND EVENT////////////////////
+//END NEWS AND EVENT////////
 
 // PARTNER WORDS
 
-// local reviews data
+// reviews data
 const reviews = [
     {
       id: 1,
@@ -498,16 +498,14 @@ const reviews = [
   });
   
   
-  //show random person
+  //show random atsiliepimą
   
   randomBtn.addEventListener("click", function(){
     currentItem = Math.floor(Math.random() * reviews.length);
-    //console.log showPerson():void
+    //console.log showPerson()
     showPerson();
   })
-
-
-  // END PARTNERS WORD
+// END PARTNERS WORD
 
   //Statistics
 
@@ -538,13 +536,12 @@ items.forEach((item) => {
   updateCount(item);
 });
 
-  //END of Statistics
+//END of Statistics
 
 
 
 
-
-  //===SEARCH===///
+//===SEARCH===///
   const url =
   'https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=10&format=json&origin=*&srsearch=';
 
@@ -597,18 +594,15 @@ const renderResults = (list) => {
         </div>`;
 };
 
-  //YEAR for FOOTER
+//YEAR for FOOTER
 
   const date = document.getElementById("date");
   date.innerHTML = new Date().getFullYear();
-    //END Year for FOOTER
+//END Year for FOOTER
 
 
-  // FORM CONTACT US MESSAGE RECEIVE
-
- 
+// FORM CONTACT US MESSAGE RECEIVE
   function sendEmail(){
-  
     Email.send({
       SecureToken: "25569c14-0ac2-4219-8e78-79b9bbda8146",
       To : 'emailfromdepweb@gmail.com',

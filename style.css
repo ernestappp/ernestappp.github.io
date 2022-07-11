@@ -436,9 +436,9 @@ h2.text-center {
    -webkit-transform: translate3d(0, 0, 0);
    -moz-transform: translate3d(0, 0, 0);
    transform: translate3d(0, 0, 0);
-   width: 420px;
+   width: 280px; /*original 420*/
    margin: 0 auto;
-   height: 620px;
+   height:550px; /*original 620*/
    overflow: hidden;
  }
  
@@ -454,7 +454,7 @@ h2.text-center {
  .header h1 {
    margin: 0;
    padding: 0;
-   font-size: 20px;
+   font-size: 15px;
    line-height: 50px;
    font-weight: 700;
    letter-spacing: .5em;
@@ -527,8 +527,8 @@ h2.text-center {
  
  .day {
    display: inline-block;
-   width: 60px;
-   padding: 10px;
+   width: 40px;
+   padding: .5rem;
    text-align: center;
    vertical-align: top;
    cursor: pointer;
@@ -547,16 +547,16 @@ h2.text-center {
  }
  
  .day-name {
-   font-size: 9px;
+   font-size: .5rem;
    text-transform: uppercase;
    margin-bottom: 5px;
    color: #78003f;
-   letter-spacing: .7px;
+   letter-spacing: .1rem;
  }
  
  .day-number {
-   font-size: 1.5em;
-   letter-spacing: .1em;
+   font-size: 1.5rem;
+   letter-spacing: .1rem;
  }
  
  
@@ -587,7 +587,7 @@ h2.text-center {
  
  .details {
    position: relative;
-   width: 420px;
+   width: 280px;/*420 original*/
    height: 75px;
    background: rgba(164, 164, 164, 1);
    margin-top: 5px;
