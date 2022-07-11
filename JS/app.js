@@ -445,7 +445,7 @@ const reviews = [
       img:
         "https://randomuser.me/api/portraits/men/47.jpg",
       text:
-        "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam maxime mollitia nulla veritatis vitae assumenda at consequatur sunt sint.",
     },
   ];
   
@@ -612,7 +612,7 @@ const renderResults = (list) => {
       +"<br> Email: " + document.getElementById("contacts-email").value
       +"<br> Message: " + document.getElementById("contacts-message").value
       }).then(
-        message => alert("Message Send Succesfully")
+        message => alert("Message Has Been Sent Succesfully")
       )
 };
   // END FORM CONTACT US MESSAGE RECEIVE
