@@ -82,8 +82,7 @@ max-width: 900px;
 
  @media (max-width:575px){
    .container{
-    background-color: #414141;
-    color:#DCDCDC;
+    color:#78003f;
     }
 }
 
@@ -106,8 +105,8 @@ max-width: 900px;
 }
 
 @media (max-width:575px){
-    .navbar .logo-tekstas{
-        color:#DCDCDC;
+    .navbar .logo-tekstas h4{
+        color:#ffffff;
      }
  }
 
@@ -135,11 +134,11 @@ max-width: 900px;
   background-color: #ffffff;
   border: 2px #ffffff;
 }
-
+/* 
 @media (max-width: 575px){
 .logo-tekstas h4 {
-    color: #ffffff;}
-}
+    color: #78003f;}
+} */
 
 /*===== MODAL in NAVBAR====*/
 
@@ -958,16 +957,16 @@ h2.text-center {
     color:#78003f;
   }
 
-  @media (max-width:860px){
+  /* @media (max-width:860px){
     .footer-container span{
       color:#ffffff;
     }
-  }
+  } */
   
-  @media (max-width:860px) {
+  /* @media (max-width:860px) {
      .footer-container h1{
       color: #ffffff;}
-     }
+     } */
 
   .footer-container ul{
   display:flex;
